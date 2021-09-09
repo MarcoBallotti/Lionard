@@ -1,15 +1,14 @@
-<h1>TOTALE PROPRIETA'</h1>
-<h1>{{ pageSize }}</h1>
-<h1>{{ currentPage }}</h1>
-<h1>{{ totalResult }}</h1>
-<ngb-pagination
-  [(page)]="currentPage"
-  [pageSize]="pageSize"
-  [collectionSize]="totalResult ?? 0"
-  [maxSize]="5"
-  (pageChange)="setCurrentPage($event)"
->
-</ngb-pagination>
-<div *ngFor="let estate of data">
-  <app-card [props]="estate"></app-card>
+<div>
+  <h1 style="text-align: center">TOTALE PROPRIETA': {{ totalResult }}</h1>
+  <ngb-pagination
+    [(page)]="currentPage"
+    [pageSize]="pageSize"
+    [collectionSize]="totalResult ?? 0"
+    [maxSize]="3"
+    (pageChange)="setCurrentPage($event)"
+  >
+  </ngb-pagination>
+  <div *ngFor="let estate of data">
+    <app-card [props]="estate"></app-card>
+  </div>
 </div>
