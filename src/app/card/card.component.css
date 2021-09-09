@@ -5,10 +5,12 @@
   background-image: url("https://cdn.lionard.com/img/opt/grifone-bkgd-trasp.png");
   background-size: cover;
   background-color: #051c2c;
+  margin-left: 10px;
+  padding: 20px;
 }
 .image-container {
   display: flex;
-  flex: 7;
+  flex: 5;
 }
 
 .main-container {

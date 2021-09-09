@@ -3,18 +3,20 @@
     <app-carousel [photos]="props.foto"></app-carousel>
   </div>
   <div class="info-container">
-    <p class="primary-text">{{ props.nome }}</p>
-    <div>
-      <span class="primary-text">{{ props.zona }}</span>
-      <span class="primary-text">{{ props.rif }}</span>
+    <p class="primary-text title">{{ props.nome }}</p>
+    <div style="flex-direction: row">
+      <span class="primary-text paragraph">{{ props.zona }}</span>
+      <span style="align-self: flex-end" class="primary-text paragraph"
+        >RIF: {{ props.rif }}</span
+      >
     </div>
-    <p class="primary-text">{{ props.descrizione }}</p>
-    <p class="primary-text">{{ props.mq }}</p>
-    <p class="primary-text">
+    <p class="primary-text paragraph">{{ props.descrizione }}</p>
+    <p class="primary-text paragraph">{{ props.mq }}</p>
+    <p class="primary-text paragraph">
       {{ props.trattativariservata ? "Trattativa riservata" : "" }}
     </p>
-    <button class="btn primary-btn">GUARDA IL VIDEO</button>
-    <button class="btn secondary-btn">VEDI LA PROPRIETÀ</button>
-    <button class="btn primary-btn">RICHIEDI INFO</button>
+    <button class="btn primary-btn lionard-btn">GUARDA IL VIDEO</button>
+    <button class="btn secondary-btn lionard-btn">VEDI LA PROPRIETÀ</button>
+    <button class="btn primary-btn lionard-btn">RICHIEDI INFO</button>
   </div>
 </div>

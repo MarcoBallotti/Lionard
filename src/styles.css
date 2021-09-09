@@ -1,38 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: LibreBaskerville-Italic;
+  src: url(assets/fonts/LibreBaskerville-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LibreBaskerville-Regular;
+  src: url(assets/fonts/LibreBaskerville-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LibreBaskerville-Bold;
+  src: url(assets/fonts/LibreBaskerville-Bold.ttf) format("truetype");
+}
+
+.lionard-btn {
+  border-width: 0.2px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 4px;
+  font-family: "LibreBaskerville-Bold";
+}
+
 .primary-btn {
   background-color: #051c2c;
   color: #ffffff;
   border-color: #ffffff;
-  border-width: 0.2px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: small;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 4px;
 }
-
+.primary-btn:hover {
+  background-color: #ffffff;
+  color: #051c2c;
+  border-color: #051c2c;
+}
 .secondary-btn {
   background-color: #ffffff;
   color: #051c2c;
   border-color: #051c2c;
-  border-width: 0.2px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: small;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 4px;
 }
-
+.secondary-btn:hover {
+  background-color: #051c2c;
+  color: #ffffff;
+  border-color: #ffffff;
+}
 .primary-text {
   color: #fff;
 }
@@ -42,4 +57,13 @@
   left: 0px;
   top: 350px;
   z-index: 999;
+}
+
+.title {
+  font-family: "LibreBaskerville-Italic";
+  font-size: large;
+}
+
+.paragraph {
+  font-family: "LibreBaskerville-Regular";
 }
