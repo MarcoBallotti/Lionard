@@ -11,6 +11,7 @@
 .image-container {
   display: flex;
   flex: 5;
+  object-fit: contain;
 }
 
 .main-container {
@@ -20,4 +21,8 @@
   border-width: 1px;
   border-color: #070707;
   flex-direction: row;
+}
+
+.span-right {
+  text-align: end;
 }

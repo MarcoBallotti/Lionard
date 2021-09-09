@@ -1,19 +1,21 @@
-<div class="container-fluid main-container">
+<div class="main-container">
   <div class="image-container">
     <app-carousel [photos]="props.foto"></app-carousel>
   </div>
   <div class="info-container">
     <p class="primary-text title">{{ props.nome }}</p>
     <div style="flex-direction: row">
-      <span class="primary-text paragraph">{{ props.zona }}</span>
-      <span style="align-self: flex-end" class="primary-text paragraph"
+      <span class="primary-text paragraph" style="align-content: flex-start">{{
+        props.zona
+      }}</span>
+      <span class="primary-text paragraph span-right" style="float: right"
         >RIF: {{ props.rif }}</span
       >
     </div>
     <p class="primary-text paragraph">{{ props.descrizione }}</p>
-    <p class="primary-text paragraph">{{ props.mq }}</p>
+    <p class="primary-text paragraph">METRATURA: {{ props.mq }}MQ</p>
     <p class="primary-text paragraph">
-      {{ props.trattativariservata ? "Trattativa riservata" : "" }}
+      {{ props.trattativariservata ? "TRATTATIVA RISERVATA" : "" }}
     </p>
     <button class="btn primary-btn lionard-btn">GUARDA IL VIDEO</button>
     <button class="btn secondary-btn lionard-btn">VEDI LA PROPRIETÀ</button>

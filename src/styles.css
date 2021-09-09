@@ -52,13 +52,6 @@
   color: #fff;
 }
 
-.carousel-btn {
-  position: absolute;
-  left: 0px;
-  top: 350px;
-  z-index: 999;
-}
-
 .title {
   font-family: "LibreBaskerville-Italic";
   font-size: large;

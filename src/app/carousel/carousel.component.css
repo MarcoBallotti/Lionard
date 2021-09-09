@@ -1,0 +1,11 @@
+.image-slider {
+  width: 1000px;
+  height: 450px;
+}
+
+.carousel-btn {
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  z-index: 999;
+}
