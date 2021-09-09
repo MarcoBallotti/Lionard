@@ -8,16 +8,18 @@
     </div>
     <p class="primary-text title">{{ props.nome }}</p>
     <div style="flex-direction: row">
-      <span class="primary-text paragraph" style="align-content: flex-start">{{
-        props.zona
+      <span class="primary-text subtitle" style="align-content: flex-start">{{
+        props.zona.toUpperCase()
       }}</span>
-      <span class="primary-text paragraph span-right" style="float: right"
+      <span class="primary-text subtitle" style="float: right"
         >RIF: {{ props.rif }}</span
       >
     </div>
-    <p class="primary-text paragraph">{{ props.descrizione }}</p>
-    <p class="primary-text paragraph">METRATURA: {{ props.mq }}MQ</p>
-    <p class="primary-text paragraph">
+    <p class="primary-text paragraph" style="margin-top: 10px">
+      {{ props.descrizione }}
+    </p>
+    <p class="primary-text subtitle">METRATURA: {{ props.mq }}MQ</p>
+    <p class="primary-text title">
       {{ props.trattativariservata ? "TRATTATIVA RISERVATA" : "" }}
     </p>
     <button class="btn primary-btn lionard-btn">GUARDA IL VIDEO</button>

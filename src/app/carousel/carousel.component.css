@@ -6,6 +6,7 @@
 .carousel-btn {
   position: absolute;
   left: 0px;
-  top: 400px;
+  top: 450px;
   z-index: 999;
+  margin-left: 10px;
 }
