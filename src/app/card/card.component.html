@@ -1,0 +1,18 @@
+<div class="container-fluid main-container">
+  <div class="image-container">
+    <app-carousel [photos]="props.foto"></app-carousel>
+  </div>
+  <div class="info-container">
+    <p>{{ props.nome }}</p>
+    <div>
+      <span>{{ props.zona }}</span>
+      <span>{{ props.rif }}</span>
+    </div>
+    <p>{{ props.descrizione }}</p>
+    <p>{{ props.mq }}</p>
+    <p>{{ props.trattativariservata ? "Trattativa riservata" : "" }}</p>
+    <button class="btn btn-primary">GUARDA IL VIDEO</button>
+    <button class="btn btn-secondary">VEDI LA PROPRIETÀ</button>
+    <button class="btn btn-primary">RICHIEDI INFO</button>
+  </div>
+</div>
