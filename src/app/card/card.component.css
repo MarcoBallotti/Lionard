@@ -1,3 +1,13 @@
+.main-container {
+  display: flex;
+  width: auto;
+  padding: 8px;
+  height: 500px;
+  border-width: 1px;
+  border-color: #070707;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
 .info-container {
   display: flex;
   flex: 3;
@@ -14,13 +24,27 @@
   flex: 5;
 }
 
-.main-container {
-  display: flex;
-  width: 1000;
-  padding: 8px;
-  height: 500px;
-  border-width: 1px;
-  border-color: #070707;
-  flex-direction: row;
-  margin-bottom: 30px;
+@media (max-width: 575.98px) {
+  .main-container {
+    width: "100%";
+    padding: 8px;
+    height: 500px;
+    border-width: 1px;
+    border-color: #070707;
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .info-container {
+    flex-direction: column;
+    background-image: url("https://cdn.lionard.com/img/opt/grifone-bkgd-trasp.png");
+    background-size: cover;
+    background-color: #051c2c;
+    padding: 15px;
+    width: "100%";
+  }
+  .image-container {
+    width: "100%";
+  }
 }

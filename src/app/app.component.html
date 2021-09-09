@@ -1,12 +1,15 @@
 <div style="padding: 50px">
-  <h1 class="paragraph" style="text-align: center; padding-top: 30px">
+  <h1
+    class="paragraph"
+    style="text-align: center; padding-top: 30px; font-size: 38px"
+  >
     {{ totalResult }} TOTALE PROPRIETA'
   </h1>
 
   <ngb-pagination
     [(page)]="currentPage"
     [pageSize]="pageSize"
-    [collectionSize]="totalResult ?? 0"
+    [collectionSize]="totalResult"
     [maxSize]="3"
     (pageChange)="setCurrentPage($event)"
   >

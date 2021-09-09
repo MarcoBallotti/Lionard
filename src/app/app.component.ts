@@ -14,7 +14,7 @@ export class AppComponent {
   data: any;
   pageSize = 10;
   currentPage = 0;
-  totalResult?: number;
+  totalResult!: number;
   readonly ROOT_URL =
     'https://devlts.lionard.com/ws/immobilesito/temp/interview/';
 
@@ -39,6 +39,7 @@ export class AppComponent {
 
   setCurrentPage(page: number) {
     this.currentPage = page;
+    console.log(page);
     this.getData();
   }
 }

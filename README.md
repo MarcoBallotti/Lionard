@@ -1,5 +1,8 @@
 # Lionard
 
+Il progetto è stato realizzato in Angular, con il sussidio di Material Icon e Bootstrap.
+Per l'esecuzione è tutto documentato qua dentro, non dovrebbero esserci problemi.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 
 ## Development server
